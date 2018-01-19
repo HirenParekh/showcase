@@ -1,0 +1,157 @@
+body{
+    background-color: #efefef;
+}
+.wrapper{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.time-line{
+    position: relative;
+    overflow: hidden;
+}
+
+.time-line-item-wrapper{
+    background: transparent;
+    position: relative;
+    padding: 10px 0;
+}
+
+.time-line-item{
+    display: inline-block;
+    position: relative;
+    max-width: 40%;
+    border: 2px solid orange;
+    background-color: #ffffff;
+    border-radius: 5px;
+    opacity: 0;
+}
+
+.time-line-item.left-item{
+    
+}
+.time-line-item.right-item{
+    
+}
+
+.time-line-item[data-arranged='true'],.time-line-item[data-arranged='true']{
+	opacity: 1;
+}
+
+.time-line-item.left-item::after{
+    position: absolute;
+    top: 0;
+    right: -20px;
+    content: '';
+    border-left: 20px solid orange;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+}
+
+.time-line-item.right-item::before{
+    position: absolute;
+    top: 0;
+    left: -20px;
+    content: '';
+    border-right: 20px solid orange;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+}
+
+.time-line-item.right-item > .bullet-point{
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    padding: 5px;
+    border: 2px solid orange;
+    border-radius: 50%;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    left: -52px;
+    top: 6px;
+}
+
+.time-line-item.left-item > .bullet-point{
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    padding: 5px;
+    border: 2px solid orange;
+    border-radius: 50%;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    right: -52px;
+    top: 4px;
+}
+
+.time-line-item > .item-content{
+    padding: 10px;
+}
+
+.bullet-point > div{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    background-color: orange;
+}
+
+.time-line-path-container{
+    display: block;
+    position: absolute;
+    width: 300px;
+    top:0;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
+#svg-path-ref{
+    opacity: 0;
+    z-index: 2;
+}
+
+.controls{
+    position: absolute;
+    right: 0;
+    top:10px;
+}
+
+@-webkit-keyframes slide-right {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+@keyframes slide-right {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes slide-left {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+@keyframes slide-left {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}

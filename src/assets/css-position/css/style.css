@@ -1,0 +1,85 @@
+body {
+    padding: 0;
+    margin: 0;
+    opacity: 0;
+}
+
+.ready {
+    opacity: 1;
+    transition: 300ms ease-out;
+}
+
+#wrapper {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+}
+
+.parent {
+    overflow: hidden;
+}
+
+.child {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.filter {
+	background-blend-mode: multiply;
+}
+
+.title {
+	text-align: center;
+    color: #ffffff;
+    font-size: 82px;
+    font-family: fantasy;
+    letter-spacing: 10px;
+    -webkit-filter: drop-shadow(6px 8px 0px rgba(0, 0, 0, 0.4));
+    filter: drop-shadow(6px 8px 0px rgba(0, 0, 0, 0.4));
+}
+
+.title.light {
+    opacity: 0.15;
+}
+
+.parent.one {
+    background-color: #3949ab;
+}
+
+.child.one {
+    background-color: #f4511c;
+    background-image: url(../images/4.jpg);
+}
+
+.parent.two {
+    background-color: #26c6da;
+}
+
+.child.two {
+    background-color: #ffca28;
+    background-image: url(../images/5.jpg);
+}
+
+.parent.three {
+    background-color: #26a69a;
+}
+
+.child.three {
+    background-color: #ec407a;
+    background-image: url(../images/6.jpg);
+}

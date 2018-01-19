@@ -1,0 +1,72 @@
+.btn-card-type, .btn-card-value {
+    padding-left: 15px;
+    padding-right: 15px;
+    float: left;
+    margin: 5px;
+    text-align: center;
+    font-size: 36px;
+    border-radius: 5px;
+    background-color: white;
+    border: 1px solid #4DAF50;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    font-family: cardFonts;
+    transition: 0.3s;
+}
+
+.btn-card-type:hover, .btn-card-value:hover {
+    background-color: #4DAF50;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+}
+
+.btn {
+    padding-left: 15px;
+    padding-right: 15px;
+    float: left;
+    margin: 5px;
+    text-align: center;
+    font-size: 22px;
+    border-radius: 5px;
+    color: white;
+    background-color: #4DAF50;
+    border: 1px solid #4DAF50;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    font-family: cardFonts;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    color: white;
+    background-color: #4ea551;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+}
+
+.btn:active {
+    color: white;
+    background-color: #4d994d;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1), 0 1px 1px 0 rgba(0, 0, 0, 0.1);
+}
+
+.disabled , .disabled:hover,.disabled:active{
+    background-color: #dddddd;
+    color: #999999;
+    border: 1px solid #999999;
+    cursor: not-allowed;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+}
+
+.active {
+    background-color: #4CAF50;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+}
+
+.red-color{
+    color: red;
+}
+
+.black-color{
+    color: black;
+}
+
+.gray-color{
+    color: #999999;
+}

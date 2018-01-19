@@ -1,0 +1,219 @@
+<div class="container">
+  <div>
+    <div class="btn-card-type data-spades" data-value="spades">♠</div>
+    <div class="btn-card-type data-hearts" data-value="hearts">♥</div>
+    <div class="btn-card-type data-clubs" data-value="clubs">♣</div>
+    <div class="btn-card-type data-diamonds" data-value="diamonds">♦</div>
+    <div class="clear"></div>
+  </div>
+  <div>
+    <div class="btn-card-value" data-value="one">A</div>
+    <div class="btn-card-value" data-value="two">2</div>
+    <div class="btn-card-value" data-value="three">3</div>
+    <div class="btn-card-value" data-value="four">4</div>
+    <div class="btn-card-value" data-value="five">5</div>
+    <div class="btn-card-value" data-value="six">6</div>
+    <div class="btn-card-value" data-value="seven">7</div>
+    <div class="btn-card-value" data-value="eight">8</div>
+    <div class="btn-card-value" data-value="nine">9</div>
+    <div class="btn-card-value" data-value="ten">10</div>
+    <div class="btn-card-value" data-value="jack">J</div>
+    <div class="btn-card-value" data-value="queen">Q</div>
+    <div class="btn-card-value" data-value="king">K</div>
+    <div class="clear"></div>
+  </div>
+  <div>
+    <!--<div class="btn" id="addCard">ADD CARD</div>-->
+    <div class="btn" id="flipCard">FLIP</div>
+    <div class="btn" id="stackCard">STACK</div>
+    <div class="btn" id="gridCard">GRID</div>
+    <div class="btn" id="stacknshuffleCard">STACK & RANDOM</div>
+    <div class="btn" id="shuffleCard">SHUFFLE</div>
+    <div class="btn" id="sortCard">SORT</div>
+    <div class="btn" id="deckOfCard">GET A DECK OF CARDS</div>
+    <div class="btn" id="removeCard">CLEAR</div>
+    <div class="btn" id="zoomIn">Zoom In</div>
+    <div class="btn" id="zoomOut">Zoom out</div>
+    <div class="btn" id="resetZoom">Reset Zoom</div>
+    <div class="clear"></div>
+  </div>
+  <!--<input type="text" value="diamonds" id="cardType" placeholder="card Type">
+  <input type="text" value="two" id="cardValue" placeholder="card Value">
+  <input type="button" id="btnAddCard" value="Add Card"/>-->
+  <div class="card-container">
+    <!--<div class="card spades one"></div>
+    <div class="card diamonds two"></div>
+    <div class="card spades three"></div>
+    <div class="card clubs four"></div>
+    <div class="card hearts five"></div>
+    <div class="card hearts six"></div>
+    <div class="card hearts seven"></div>
+    <div class="card hearts eight"></div>
+    <div class="card hearts nine"></div>
+    <div class="card hearts ten"></div>
+    <div class="card hearts jack"></div>
+    <div class="card hearts queen"></div>
+    <div class="card hearts king"></div>-->
+    <!--<div class="card spades nine">
+        <div class="card-data data-hearts">
+            <div class="card-left-view">
+                <div class="card-value">9</div>
+                <div class="card-type">♥</div>
+            </div>
+            <div class="card-center-view">
+                <span class="suit top-left">♥</span>
+            </div>
+            <div class="card-right-view">
+                <div class="card-value">9</div>
+                <div class="card-type">♥</div>
+            </div>
+        </div>
+    </div>
+    <div class="card spades six">
+        <div class="card-data">
+            <div class="card-left-view">
+                <div class="card-value">6</div>
+                <div class="card-type">♠</div>
+            </div>
+            <div class="card-center-view">
+                <span class="suit top-left">♠</span>
+                <span class="suit top-right">♠</span>
+                <span class="suit middle-left">♠</span>
+                <span class="suit middle-right">♠</span>
+                <span class="suit bottom-left">♠</span>
+                <span class="suit bottom-right">♠</span>
+            </div>
+            <div class="card-right-view">
+                <div class="card-value">6</div>
+                <div class="card-type">♠</div>
+            </div>
+        </div>
+    </div>
+    <div class="card diamonds three">
+        <div class="card-data data-diamonds">
+            <div class="card-left-view">
+                <div class="card-value">3</div>
+                <div class="card-type">♦</div>
+            </div>
+            <div class="card-center-view">
+                <span class="suit top-center">♦</span>
+                <span class="suit middle-center">♦</span>
+                <span class="suit bottom-center">♦</span>
+            </div>
+            <div class="card-right-view">
+                <div class="card-value">3</div>
+                <div class="card-type">♦</div>
+            </div>
+        </div>
+    </div>
+    <div class="card hearts four">
+        <div class="card-data data-hearts">
+            <div class="card-left-view">
+                <div class="card-value">4</div>
+                <div class="card-type">♥</div>
+            </div>
+            <div class="card-center-view">
+                <span class="suit top-left">♥</span>
+                <span class="suit top-right">♥</span>
+                <span class="suit bottom-right">♥</span>
+                <span class="suit bottom-left">♥</span>
+            </div>
+            <div class="card-right-view">
+                <div class="card-value">4</div>
+                <div class="card-type">♥</div>
+            </div>
+        </div>
+    </div>
+    <div class="card hearts seven">
+        <div class="card-data data-hearts">
+            <div class="card-left-view">
+                <div class="card-value">10</div>
+                <div class="card-type">♥</div>
+            </div>
+            <div class="card-center-view">
+                <span class="suit top-left">♥</span>
+                <span class="suit top-right">♥</span>
+                <span class="suit middle-top-left">♥</span>
+                <span class="suit middle-top-center">♥</span>
+                <span class="suit middle-top-right">♥</span>
+                <span class="suit middle-bottom-left">♥</span>
+                <span class="suit middle-bottom-center">♥</span>
+                <span class="suit middle-bottom-right">♥</span>
+                <span class="suit bottom-right">♥</span>
+                <span class="suit bottom-left">♥</span>
+            </div>
+            <div class="card-right-view">
+                <div class="card-value">10</div>
+                <div class="card-type">♥</div>
+            </div>
+        </div>
+    </div>
+    <div class="card hearts eight">
+        <div class="card-data data-hearts">
+            <div class="card-left-view">
+                <div class="card-value">8</div>
+                <div class="card-type">♥</div>
+            </div>
+            <div class="card-center-view">
+                <span class="suit top-left">♥</span>
+                <span class="suit top-right">♥</span>
+
+                <span class="suit middle-top">♥</span>
+                <span class="suit middle-bottom">♥</span>
+
+                <span class="suit middle-left">♥</span>
+                <span class="suit middle-right">♥</span>
+
+                <span class="suit bottom-left">♥</span>
+                <span class="suit bottom-right">♥</span>
+            </div>
+            <div class="card-right-view">
+                <div class="card-value">8</div>
+                <div class="card-type">♥</div>
+            </div>
+        </div>
+    </div>-->
+    <!--<ul>
+        <li>
+            <div class="card hearts one"></div>
+        </li>
+        <li>
+            <div class="card hearts two"></div>
+        </li>
+        <li>
+            <div class="card hearts three"></div>
+        </li>
+        <li>
+            <div class="card hearts four"></div>
+        </li>
+        <li>
+            <div class="card hearts five"></div>
+        </li>
+        <li>
+            <div class="card hearts six"></div>
+        </li>
+        <li>
+            <div class="card hearts seven"></div>
+        </li>
+        <li>
+            <div class="card hearts eight"></div>
+        </li>
+        <li>
+            <div class="card hearts nine"></div>
+        </li>
+        <li>
+            <div class="card hearts ten"></div>
+        </li>
+        <li>
+            <div class="card hearts jack"></div>
+        </li>
+        <li>
+            <div class="card hearts queen"></div>
+        </li>
+        <li>
+            <div class="card hearts king"></div>
+        </li>
+    </ul>-->
+    <div class="clear"></div>
+  </div>
+</div>
