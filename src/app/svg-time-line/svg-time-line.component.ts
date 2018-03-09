@@ -8,9 +8,10 @@ import {AppProjectBase} from '../app-project-base.model';
 export class SvgTimeLineComponent extends AppProjectBase {
   constructor() {
     super();
+    this.addDependencies();
   }
 
-  ngAfterViewInit() {
+  addDependencies() {
     this.addLinkTagToElementDOM('assets/svg-time-line/css/style.css');
     this.addScriptTagToElementDOM('assets/svg-time-line/js/cssua.js');
     this.addScriptTagToElementDOM('assets/svg-time-line/js/script.js');
